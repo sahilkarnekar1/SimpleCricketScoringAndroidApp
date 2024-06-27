@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SelectTwoTeamsActivity">
+
+    <Button
+        android:id="@+id/selectTeam1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Team 1"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/team1NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 1 Name"
+        android:layout_below="@id/selectTeam1Button"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/selectTeam2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Team 2"
+        android:layout_below="@id/team1NameTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/team2NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 2 Name"
+        android:layout_below="@id/selectTeam2Button"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/oversEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. of Overs"
+        android:inputType="number"
+        android:layout_below="@id/team2NameTextView"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/tossWinnerGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/oversEditText"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/team1TossWinnerRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team 1 Wins Toss"/>
+
+        <RadioButton
+            android:id="@+id/team2TossWinnerRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team 2 Wins Toss"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/tossDecisionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tossWinnerGroup"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/batRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bat"/>
+
+        <RadioButton
+            android:id="@+id/bowlRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bowl"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/letsPlayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Play"
+        android:layout_below="@id/tossDecisionGroup"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

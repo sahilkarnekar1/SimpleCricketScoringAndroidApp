@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".ScoringActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scoring 1st Inning"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note :This is my personal practice project and because of time consumption of development, No Undo or Edit option provided That's Why Record Score Perfectly on the ball"
+        android:textColor="#F80202"
+        />
+
+    <TextView
+        android:id="@+id/battingTeamTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batting Team"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/currentScoreTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: 0/0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+android:layout_weight="1"
+
+            />
+
+        <TextView
+            android:id="@+id/totalOversTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text=" Total Overs (0.0 / 5.0)"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/strikerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Striker"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/nonStrikerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-Striker"
+                android:textSize="18sp"
+
+                android:layout_marginBottom="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="swap ↑ ↓"
+            android:textStyle="bold"
+            android:id="@+id/swapButton"
+
+            />
+
+    </LinearLayout>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/runButton0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/runButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/runButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/runButton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/runButton4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/runButton5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/runButton6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="6"/>
+
+        <Button
+            android:id="@+id/wideButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Wide"/>
+
+        <Button
+            android:id="@+id/noBallButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="No Ball"/>
+
+        <Button
+            android:id="@+id/wicketBallButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Wicket Ball"/>
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/bowlingTeamNamet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bowling Team"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/bowlerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bowler"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bowlsRecyclerview"/>
+
+</LinearLayout>

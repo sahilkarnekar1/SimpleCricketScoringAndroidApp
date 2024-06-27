@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".StartInningsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Add all 11 player or 11 + players from this activity only , You cannot add new players after starting scoring due to development time problem i have not added this functionality"
+        android:textColor="#FA0202"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/battingTeamNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Batting TeamName"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/selectStrikerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Striker"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/strikerSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/selectNonStrikerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Non-Striker"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/nonStrikerSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/bowlingTeamNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bowling TeamName"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/selectBowlerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Bowler From Bowling Team"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/bowlerSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/startScoringButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_gravity="center_horizontal|center"
+            android:text="Start Scoring"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
